@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="wxDashBoardFrame">
+		<size>800,480</size>
+		<bg>#909090</bg>
+		<id_arg>0</id_arg>
+		<handler function="OnPaint" entry="EVT_PAINT" />
+		<object class="Custom" name="ID_CUSTOM5" subclass="wxImageTakiPanel" variable="centralTakiPanel" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),$(NAME));</creating_code>
+			<include_file>wxImageTakiPanel.h</include_file>
+			<style>1</style>
+			<pos>184,16</pos>
+			<size>452,452</size>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="DateLabel" member="yes">
+			<label>12 April 2020</label>
+			<pos>16,440</pos>
+			<size>160,25</size>
+			<fg>#FFFFFF</fg>
+			<font>
+				<size>16</size>
+				<style>normal</style>
+				<weight>normal</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Sans</face>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="TimeLabel" member="yes">
+			<label>8:30:00</label>
+			<pos>672,440</pos>
+			<size>49,25</size>
+			<fg>#FFFFFF</fg>
+			<font>
+				<size>16</size>
+				<style>normal</style>
+				<weight>normal</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Sans</face>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT3" variable="speedLabel" member="yes">
+			<label>100</label>
+			<pos>336,200</pos>
+			<size>144,72</size>
+			<fg>#FFFFFF</fg>
+			<font>
+				<size>50</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Sans</face>
+			</font>
+			<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+		</object>
+		<object class="Custom" name="ID_CUSTOM1" subclass="MyVerticalBar" variable="oilBar" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),$(NAME));</creating_code>
+			<include_file>MyVerticalBar.h</include_file>
+			<style>1</style>
+			<pos>64,152</pos>
+			<size>19,184</size>
+		</object>
+		<object class="Custom" name="ID_CUSTOM2" subclass="MyVerticalBar" variable="levelBar" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),$(NAME));</creating_code>
+			<include_file>MyVerticalBar.h</include_file>
+			<style>1</style>
+			<pos>100,152</pos>
+			<size>19,184</size>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText1" member="yes">
+			<label>Oil</label>
+			<pos>64,128</pos>
+			<fg>#FFFFFF</fg>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText2" member="yes">
+			<label>Fuel</label>
+			<pos>96,128</pos>
+			<fg>#FFFFFF</fg>
+		</object>
+		<object class="Custom" name="ID_CUSTOM3" subclass="MyDashIcon" variable="icon1" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),wxDefaultValidator,$(NAME));</creating_code>
+			<include_file>MyDashIcon.h</include_file>
+			<style>1</style>
+			<pos>626,96</pos>
+			<size>52,52</size>
+		</object>
+		<object class="Custom" name="ID_CUSTOM4" subclass="MyDashIcon" variable="icon2" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),wxDefaultValidator,$(NAME));</creating_code>
+			<style>1</style>
+			<pos>682,96</pos>
+			<size>52,52</size>
+		</object>
+		<object class="Custom" name="ID_CUSTOM6" subclass="MyDashIcon" variable="icon4" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),wxDefaultValidator,$(NAME));</creating_code>
+			<style>1</style>
+			<pos>626,168</pos>
+			<size>52,52</size>
+		</object>
+		<object class="Custom" name="ID_CUSTOM7" subclass="MyDashIcon" variable="icon5" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),wxDefaultValidator,$(NAME));</creating_code>
+			<style>1</style>
+			<pos>682,168</pos>
+			<size>52,52</size>
+		</object>
+		<object class="Custom" name="ID_CUSTOM8" subclass="MyDashIcon" variable="icon6" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),wxDefaultValidator,$(NAME));</creating_code>
+			<style>1</style>
+			<pos>738,168</pos>
+			<size>52,52</size>
+		</object>
+		<object class="Custom" name="ID_CUSTOM9" subclass="MyDashIcon" variable="icon7" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),wxDefaultValidator,$(NAME));</creating_code>
+			<style>1</style>
+			<pos>626,240</pos>
+			<size>52,52</size>
+		</object>
+		<object class="Custom" name="ID_CUSTOM10" subclass="MyDashIcon" variable="icon8" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),wxDefaultValidator,$(NAME));</creating_code>
+			<style>1</style>
+			<pos>682,240</pos>
+			<size>52,52</size>
+		</object>
+		<object class="Custom" name="ID_CUSTOM11" subclass="MyDashIcon" variable="icon9" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),wxDefaultValidator,$(NAME));</creating_code>
+			<style>1</style>
+			<pos>738,240</pos>
+			<size>52,52</size>
+		</object>
+		<object class="Custom" name="ID_CUSTOM12" subclass="MyDashIcon" variable="iconA" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),wxDefaultValidator,$(NAME));</creating_code>
+			<style>1</style>
+			<pos>626,308</pos>
+			<size>52,52</size>
+		</object>
+		<object class="Custom" name="ID_CUSTOM13" subclass="MyDashIcon" variable="iconB" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),wxDefaultValidator,$(NAME));</creating_code>
+			<style>1</style>
+			<pos>682,308</pos>
+			<size>52,52</size>
+		</object>
+		<object class="Custom" name="ID_CUSTOM14" subclass="MyDashIcon" variable="iconC" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),wxDefaultValidator,$(NAME));</creating_code>
+			<style>1</style>
+			<pos>738,308</pos>
+			<size>52,52</size>
+		</object>
+		<object class="Custom" name="ID_CUSTOM15" subclass="MyDashIcon" variable="iconD" member="yes">
+			<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),wxDefaultValidator,$(NAME));</creating_code>
+			<style>1</style>
+			<pos>738,96</pos>
+			<size>52,52</size>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT4" variable="totalKmLabel" member="yes">
+			<label>100001</label>
+			<pos>358,352</pos>
+			<size>112,32</size>
+			<fg>#606060</fg>
+			<font>
+				<size>20</size>
+				<style>normal</style>
+				<weight>normal</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Sans</face>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText3" member="yes">
+			<label>km</label>
+			<pos>470,362</pos>
+			<size>48,17</size>
+			<fg>#909090</fg>
+			<font>
+				<size>12</size>
+				<style>normal</style>
+				<weight>normal</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Sans</face>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT8" variable="StaticText4" member="yes">
+			<label>km/h</label>
+			<pos>392,272</pos>
+		</object>
+		<object class="wxTimer" name="ID_TIMER1" variable="Timer1" member="yes">
+			<interval>100</interval>
+			<handler function="OnTimer1Trigger" entry="EVT_TIMER" />
+		</object>
+	</object>
+</wxsmith>
