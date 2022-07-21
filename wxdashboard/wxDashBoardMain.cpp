@@ -77,12 +77,10 @@ BEGIN_EVENT_TABLE(wxDashBoardFrame,wxFrame)
     //*)
 END_EVENT_TABLE()
 
-//#define IMX_PLATFORM
-
 wxString GetImageDir(){
 
-#ifdef IMX_PLATFORM
-    return("/usr/share/dashboard/images/");
+#ifdef __aarch64__
+    return("/usr/share/wxDashBoard/images/");
 #else
     return("./images/");
 #endif

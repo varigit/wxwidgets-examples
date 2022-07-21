@@ -15,9 +15,7 @@ IMPLEMENT_APP(wxDashBoardApp);
 
 bool wxDashBoardApp::OnInit()
 {
-//#ifdef IMX_PLATFORM
     wxDashBoardFrame* Frame;
-//#endif // IMX_PLATFORM
 
     //(*AppInitialize
     bool wxsOK = true;
@@ -30,9 +28,9 @@ bool wxDashBoardApp::OnInit()
     }
     //*)
 
-#ifdef IMX_PLATFORM
+#ifdef __aarch64__
     Frame->ShowFullScreen(true, wxFULLSCREEN_NOBORDER);
-#endif // IMX_PLATFORM
+#endif // __aarch64__
 
     return wxsOK;
 
